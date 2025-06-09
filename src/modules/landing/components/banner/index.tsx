@@ -42,7 +42,7 @@ export const Banner = () => {
           <img src="/hero-image.png" alt="" className="w-full h-full object-fill" />
         </div>
         <div className="absolute top-1/2 right-1/4 transform translate-x-1/2 -translate-y-1/2 w-[40%]">
-          <div className="mb-8">
+          <div className="mb-8 max-w-[400px]">
             <h1 className="text-5xl font-bold mb-6">
               <span className="text-highlight">Ganhe </span>
               <span className="text-light">para Estudar</span>
