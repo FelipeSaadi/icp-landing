@@ -53,50 +53,52 @@ export const Banner = () => {
             </p>
           </div>
 
-          <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-              <FormField
-                control={form.control}
-                name="email"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="text-light">E-mail</FormLabel>
-                    <FormControl>
-                      <Input 
-                        placeholder="Seu e-mail" 
-                        {...field} 
-                        className="rounded-[30px] min-w-[300px] px-4 py-6 text-primary placeholder:text-primary opacity-50" 
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="name"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="text-light">Nome</FormLabel>
-                    <FormControl>
-                      <Input 
-                        placeholder="Seu nome" 
-                        {...field} 
-                        className="rounded-[30px] min-w-[300px] px-4 py-6 text-primary placeholder:text-primary opacity-50" 
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <Button type="submit" variant="default" className="flex items-center justify-center w-full bg-primary rounded-[30px] px-4 py-6">
-                <span className="mr-2 text-light">
-                  QUERO GANHAR PARA ESTUDAR
-                  <span className="ml-4">→</span>
-                </span>
-              </Button>
-            </form>
-          </Form>
+          <div className="flex flex-col bg-background rounded-[30px] w-fit p-8">
+            <Form {...form}>
+              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+                <FormField
+                  control={form.control}
+                  name="email"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel className="text-primary">E-mail</FormLabel>
+                      <FormControl>
+                        <Input
+                          placeholder="Seu e-mail"
+                          {...field}
+                          className="rounded-[30px] min-w-[300px] px-4 py-6 text-primary placeholder:text-primary"
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="name"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel className="text-primary">Nome</FormLabel>
+                      <FormControl>
+                        <Input
+                          placeholder="Seu nome"
+                          {...field}
+                          className="rounded-[30px] min-w-[300px] px-4 py-6 text-primary placeholder:text-primary"
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <Button type="submit" variant="default" className="flex items-center justify-center w-full bg-primary rounded-[30px] px-4 py-6">
+                  <span className="mr-2 text-light">
+                    QUERO GANHAR PARA ESTUDAR
+                    <span className="ml-4">→</span>
+                  </span>
+                </Button>
+              </form>
+            </Form>
+          </div>
         </div>
       </div>
 
@@ -128,10 +130,10 @@ export const Banner = () => {
                   <FormItem>
                     <FormLabel className="text-primary">E-mail</FormLabel>
                     <FormControl>
-                      <Input 
-                        placeholder="Seu e-mail" 
-                        {...field} 
-                        className="rounded-[30px] w-full px-4 py-6 text-primary placeholder:text-primary opacity-50" 
+                      <Input
+                        placeholder="Seu e-mail"
+                        {...field}
+                        className="rounded-[30px] w-full px-4 py-6 text-primary placeholder:text-primary opacity-50"
                       />
                     </FormControl>
                     <FormMessage />
@@ -145,10 +147,10 @@ export const Banner = () => {
                   <FormItem>
                     <FormLabel className="text-primary">Nome</FormLabel>
                     <FormControl>
-                      <Input 
-                        placeholder="Seu nome" 
-                        {...field} 
-                        className="rounded-[30px] w-full px-4 py-6 text-primary placeholder:text-primary opacity-50" 
+                      <Input
+                        placeholder="Seu nome"
+                        {...field}
+                        className="rounded-[30px] w-full px-4 py-6 text-primary placeholder:text-primary opacity-50"
                       />
                     </FormControl>
                     <FormMessage />
