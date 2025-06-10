@@ -15,9 +15,9 @@ const Page = () => {
           <h2 className="text-4xl font-bold max-w-[720px] mx-auto text-dark">A <strong className="text-primary">revolução</strong> na computação <strong className="text-primary">descentralizada</strong> que está redefinindo a internet como conhecemos</h2>
         </section>
 
-        <section className="mx-60 mt-40">
-          <div className="flex items-center gap-16">
-            <div className="max-w-[500px]">
+        <section className="md:mx-12 xl:mx-32 mt-40">
+          <div className="flex flex-col md:flex lg:flex-row lg:items-center gap-16">
+            <div className="lg:max-w-[500px]">
               <div className="relative ">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-highlight/20 blur-3xl rounded-full" />
                 <img src="/card-image.jpg" alt="" className="relative z-10 border-2 border-primary rounded-[30px]" />
@@ -36,7 +36,6 @@ const Page = () => {
           </div>
         </section>
       </div>
-{/* 
       <div className="mt-40">
         <Marquee />
       </div>
@@ -45,7 +44,7 @@ const Page = () => {
         <section className="mt-40">
           <h2 className="text-4xl font-bold text-primary text-center mb-16">Diferenciais da ICP</h2>
 
-          <div className="grid grid-cols-2 gap-8 mx-60">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:mx-4 xl:mx-32">
             <div className="bg-white p-8 flex border-[1px] border-primary rounded-[12px] gap-6">
               <div className="shrink-0">
                 <img src="/benefits/1.png" alt="" className="w-40 h-40 rounded-[12px] object-cover" />
@@ -90,7 +89,7 @@ const Page = () => {
           </div>
         </section>
 
-        <section>
+        {/* <section>
           <div className="mx-auto py-16 bg-primary px-40 mt-24 rounded-[30px]">
             <h2 className="text-3xl font-bold mb-12 text-light">Para quem se destina?</h2>
             <div className="grid grid-cols-3 gap-8">
@@ -125,9 +124,9 @@ const Page = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
-        <section className="mt-24 py-16">
+        {/* <section className="mt-24 py-16">
           <h2 className="text-4xl font-bold text-primary mb-16 px-40">Principais Casos de Uso</h2>
           <div className="grid grid-cols-2 gap-8 mx-40">
             <div className="bg-white rounded-[20px] p-8">
@@ -165,8 +164,8 @@ const Page = () => {
               <p className="text-dark text-sm">Sistemas de votação e governança transparentes e verificáveis.</p>
             </div>
           </div>
-        </section>
-      </div> */}
+        </section> */}
+      </div>
 
       {/* <div className="mt-24">
         <ImageMarquee
