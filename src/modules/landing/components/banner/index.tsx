@@ -36,135 +36,138 @@ export const Banner = () => {
   return (
     <section className="w-full">
       {/* Desktop Layout */}
-      <div className="relative w-full rounded-[30px] overflow-hidden hidden lg:block">
-        <img src="/hero.png" alt="" className="w-full max-h-[640px] object-cover" />
-        <div className="absolute top-1/2 left-0 h-full transform -translate-y-1/2 w-[50%]">
-          <img src="/hero-image.png" alt="" className="w-full h-full object-fill" />
-        </div>
-        <div className="absolute top-1/2 right-1/4 transform translate-x-1/2 -translate-y-1/2 w-[40%]">
-          <div className="mb-8 max-w-[400px]">
-            <h1 className="text-5xl font-bold mb-6">
-              <span className="text-highlight">Ganhe </span>
-              <span className="text-light">para Estudar</span>
-            </h1>
-            <p className="text-text text-xl leading-relaxed">
-              Acesse nossa <strong>trilha educacional</strong> e ganhe para
-              estudar enquanto aprende tudo sobre a <strong>ICP</strong>!
-            </p>
-          </div>
+      <div className="relative w-full rounded-[30px] hidden md:flex">
+      <img src="/hero.png" alt="" className="absolute top-0 w-full h-full rounded-[30px] object-cover" />
+        <div className="flex w-full h-full z-10 my-12">
+          <img src="/hero-image.png" alt="" className="absolute top-0 left-0 w-[60%] h-full object-fill" />
+          <div className="md:mr-12 ml-auto md:my-16 lg:my-20 w-[40%] flex flex-col">
+            <div className="mb-8 max-w-[90%]">
+              <h1 className="text-5xl font-bold mb-6">
+                <span className="text-highlight">Ganhe </span>
+                <span className="text-light">para Estudar</span>
+              </h1>
+              <p className="text-text text-xl leading-relaxed md:max-w-[90%] lg:max-w-[80%]">
+                Acesse nossa <strong>trilha educacional</strong> e ganhe para
+                estudar enquanto aprende tudo sobre a <strong>ICP</strong>!
+              </p>
+            </div>
 
-          <div className="flex flex-col bg-background rounded-[30px] w-fit p-8">
-            <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-                <FormField
-                  control={form.control}
-                  name="email"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel className="text-primary">E-mail</FormLabel>
-                      <FormControl>
-                        <Input
-                          placeholder="Seu e-mail"
-                          {...field}
-                          className="rounded-[30px] min-w-[300px] px-4 py-6 text-primary placeholder:text-primary"
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name="name"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel className="text-primary">Nome</FormLabel>
-                      <FormControl>
-                        <Input
-                          placeholder="Seu nome"
-                          {...field}
-                          className="rounded-[30px] min-w-[300px] px-4 py-6 text-primary placeholder:text-primary"
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <Button type="submit" variant="default" className="flex items-center justify-center w-full bg-primary rounded-[30px] px-4 py-6">
-                  <span className="mr-2 text-light">
-                    QUERO GANHAR PARA ESTUDAR
-                    <span className="ml-4">→</span>
-                  </span>
-                </Button>
-              </form>
-            </Form>
+            <div className="flex flex-col bg-background rounded-[30px] w-fit p-8">
+              <Form {...form}>
+                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+                  <FormField
+                    control={form.control}
+                    name="email"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel className="text-primary">E-mail</FormLabel>
+                        <FormControl>
+                          <Input
+                            placeholder="Seu e-mail"
+                            {...field}
+                            className="rounded-[30px] md:min-w-[200px] lg:min-w-[300px] px-4 py-6 text-primary placeholder:text-primary"
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <FormField
+                    control={form.control}
+                    name="name"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel className="text-primary">Nome</FormLabel>
+                        <FormControl>
+                          <Input
+                            placeholder="Seu nome"
+                            {...field}
+                            className="rounded-[30px] md:min-w-[200px] lg:min-w-[300px] px-4 py-6 text-primary placeholder:text-primary"
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <Button type="submit" variant="default" className="flex items-center justify-center w-full bg-primary rounded-[30px] px-4 py-6">
+                    <span className="mr-2 text-light md:text-xs lg:text-lg">
+                      QUERO GANHAR PARA ESTUDAR
+                      <span className="ml-4">→</span>
+                    </span>
+                  </Button>
+                </form>
+              </Form>
+            </div>
           </div>
         </div>
       </div>
 
       {/* Mobile Layout */}
-      <div className="lg:hidden">
-        <div className="relative w-full rounded-t-[30px] overflow-hidden">
-          <img src="/hero.png" alt="" className="w-full h-[300px] object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50">
-            <div className="absolute bottom-8 left-0 right-0 px-4">
-              <h1 className="text-3xl font-bold mb-4 text-center">
+      <div className="md:hidden">
+        <div className="relative flex w-full rounded-[30px] overflow-hidden">
+          <img src="/hero.png" alt="" className="absolute top-0 w-full h-full object-cover" />
+          <div className="flex flex-col w-full z-10">
+            <div className="mx-auto mb-8 px-4 py-8">
+              <h1 className="text-3xl font-bold mb-2 text-center">
                 <span className="text-highlight">Ganhe </span>
                 <span className="text-light">para Estudar</span>
               </h1>
-              <p className="text-light text-lg text-center">
+              <p className="text-text text-lg text-center px-2">
                 Acesse nossa <strong>trilha educacional</strong> e ganhe para
                 estudar enquanto aprende tudo sobre a <strong>ICP</strong>!
               </p>
             </div>
-          </div>
-        </div>
 
-        <div className="bg-background px-4 py-8 rounded-b-[30px]">
-          <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-              <FormField
-                control={form.control}
-                name="email"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="text-primary">E-mail</FormLabel>
-                    <FormControl>
-                      <Input
-                        placeholder="Seu e-mail"
-                        {...field}
-                        className="rounded-[30px] w-full px-4 py-6 text-primary placeholder:text-primary opacity-50"
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="name"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="text-primary">Nome</FormLabel>
-                    <FormControl>
-                      <Input
-                        placeholder="Seu nome"
-                        {...field}
-                        className="rounded-[30px] w-full px-4 py-6 text-primary placeholder:text-primary opacity-50"
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <Button type="submit" variant="default" className="flex items-center justify-center w-full bg-primary rounded-[30px] px-4 py-6">
-                <span className="mr-2 text-light text-sm">
-                  QUERO GANHAR PARA ESTUDAR
-                  <span className="ml-4">→</span>
-                </span>
-              </Button>
-            </form>
-          </Form>
+            <div className="flex flex-col bg-background rounded-[30px] mx-12 p-8">
+              <Form {...form}>
+                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+                  <FormField
+                    control={form.control}
+                    name="email"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel className="text-primary">E-mail</FormLabel>
+                        <FormControl>
+                          <Input
+                            placeholder="Seu e-mail"
+                            {...field}
+                            className="rounded-[30px] min-w-[200px] px-4 py-6 text-primary placeholder:text-primary"
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <FormField
+                    control={form.control}
+                    name="name"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel className="text-primary">Nome</FormLabel>
+                        <FormControl>
+                          <Input
+                            placeholder="Seu nome"
+                            {...field}
+                            className="rounded-[30px] min-w-[200px] px-4 py-6 text-primary placeholder:text-primary"
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <Button type="submit" variant="default" className="flex items-center justify-center w-full bg-primary rounded-[30px] px-8 py-6">
+                    <span className="mr-2 text-light text-xs">
+                      QUERO GANHAR PARA ESTUDAR
+                      <span className="ml-4">→</span>
+                    </span>
+                  </Button>
+                </form>
+              </Form>
+            </div>
+            <div className="flex">
+              <img src="/hero-image.png" alt="" className="w-full object-fill" />
+            </div>
+          </div>
         </div>
       </div>
     </section>

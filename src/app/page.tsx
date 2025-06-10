@@ -36,7 +36,7 @@ const Page = () => {
           </div>
         </section>
       </div>
-
+{/* 
       <div className="mt-40">
         <Marquee />
       </div>
@@ -166,9 +166,9 @@ const Page = () => {
             </div>
           </div>
         </section>
-      </div>
+      </div> */}
 
-      <div className="mt-24">
+      {/* <div className="mt-24">
         <ImageMarquee
           images={[
             { src: "/partners/unb.png", alt: "UNB" },
@@ -180,9 +180,9 @@ const Page = () => {
             { src: "/partners/inteli.png", alt: "INTELI" },
           ]}
         />
-      </div>
+      </div> */}
 
-      <section className="mt-24 mx-8">
+      {/* <section className="mt-24 mx-8">
         <div className="rounded-[30px] overflow-hidden">
           <div className="flex items-center max-w-[1200px] mx-auto bg-backgroundHighlight rounded-[20px]">
             <div className="w-[45%]">
@@ -202,14 +202,14 @@ const Page = () => {
         </div>
 
         <div className="flex justify-center gap-4 mt-12">
-          <Button variant="outline" className="px-8 py-8 border border-primary text-primary rounded-[30px] text-sm transition-all">
+          <Button variant="outline" className="px-8 py-6 border border-primary text-primary rounded-[30px] text-sm transition-all">
             CONHECER A DOCUMENTAÇÃO →
           </Button>
-          <Button variant="outline" className="px-8 py-8 border border-primary text-primary rounded-[30px] text-sm transition-all">
+          <Button variant="outline" className="px-8 py-6 border border-primary text-primary rounded-[30px] text-sm transition-all">
             JÁ SOU ALUNO →
           </Button>
         </div>
-      </section>
+      </section> */}
 
       <footer className="mt-24 bg-primary">
         <div className="max-w-[1200px] h-32 mx-auto px-8 py-4 flex items-center justify-between">
