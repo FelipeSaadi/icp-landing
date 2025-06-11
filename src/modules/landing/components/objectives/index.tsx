@@ -18,7 +18,7 @@ const data = [
   }
 ]
 
-const Objectives = () => {
+export const Objectives = () => {
   return (
     <section>
       {/* Mobile */}
@@ -64,5 +64,3 @@ const Objectives = () => {
     </section>
   )
 }
-
-export default Objectives

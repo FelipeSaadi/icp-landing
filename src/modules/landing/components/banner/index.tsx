@@ -1,5 +1,7 @@
 'use client'
 
+import { useRouter } from "next/navigation"
+
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
@@ -21,6 +23,8 @@ const schema = z.object({
 })
 
 export const Banner = () => {
+  const router = useRouter()
+
   const form = useForm({
     resolver: zodResolver(schema),
     defaultValues: {
@@ -31,13 +35,14 @@ export const Banner = () => {
 
   const onSubmit = (data: z.infer<typeof schema>) => {
     console.log(data)
+    router.push('http://aprendaicp.xyz')
   }
 
   return (
     <section className="w-full">
       {/* Desktop Layout */}
       <div className="relative w-full rounded-[30px] hidden md:flex">
-      <img src="/hero.png" alt="" className="absolute top-0 w-full h-full rounded-[30px] object-cover" />
+        <img src="/hero.png" alt="" className="absolute top-0 w-full h-full rounded-[30px] object-cover" />
         <div className="flex w-full h-full z-10 my-12">
           <img src="/hero-image.png" alt="" className="absolute top-0 left-0 w-[60%] h-full object-fill" />
           <div className="md:mr-12 ml-auto md:my-16 lg:my-20 w-[40%] flex flex-col">

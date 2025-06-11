@@ -8,29 +8,29 @@ module.exports = {
     './src/modules/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    screens: {
-      'xxs': '540px',
-    },
     extend: {
+      screens: {
+        xxs: '540px',
+      },
       colors: {
         background: 'var(--background)',
         backgroundDark: 'var(--background-dark)',
-		backgroundHighlight: 'var(--background-highlight)',
+        backgroundHighlight: 'var(--background-highlight)',
         primary: {
           DEFAULT: 'var(--primary)',
-          dark: 'var(--primary-dark)'
+          dark: 'var(--primary-dark)',
         },
         text: {
           DEFAULT: 'var(--text)',
         },
-		secondary: 'var(--text-secondary)',
-		light: 'var(--text-light)',
+        secondary: 'var(--text-secondary)',
+        light: 'var(--text-light)',
         highlight: 'var(--highlight)',
-		dark: 'var(--text-dark)',
+        dark: 'var(--text-dark)',
       },
       animation: {
-        marquee: 'marquee 15s linear infinite',
-        marquee2: 'marquee2 15s linear infinite',
+        marquee: 'marquee 12s linear infinite',
+        marquee2: 'marquee2 12s linear infinite',
       },
       keyframes: {
         marquee: {

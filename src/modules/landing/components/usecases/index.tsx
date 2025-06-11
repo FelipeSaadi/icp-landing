@@ -1,4 +1,4 @@
-const UseCases = () => {
+export const UseCases = () => {
   return (
     <section className="mt-24 py-16">
       <h2 className="text-4xl font-bold text-primary mb-16 lg:px-40">Principais Casos de Uso</h2>
@@ -41,5 +41,3 @@ const UseCases = () => {
     </section>
   )
 }
-
-export default UseCases

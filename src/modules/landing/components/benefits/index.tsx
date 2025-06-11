@@ -21,7 +21,7 @@ const data = [
   }
 ]
 
-const Benefits = () => {
+export const Benefits = () => {
   return (
     <section className="mt-40">
       <h2 className="text-4xl font-bold text-primary text-center mb-16">Diferenciais da ICP</h2>
@@ -42,5 +42,3 @@ const Benefits = () => {
     </section>
   )
 }
-
-export default Benefits
