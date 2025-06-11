@@ -35,7 +35,7 @@ export const Banner = () => {
 
   const onSubmit = (data: z.infer<typeof schema>) => {
     console.log(data)
-    router.push('http://aprendaicp.xyz')
+    // router.push('http://aprendaicp.xyz')
   }
 
   return (
@@ -73,7 +73,7 @@ export const Banner = () => {
                             className="rounded-[30px] md:min-w-[200px] lg:min-w-[300px] px-4 py-6 text-primary placeholder:text-primary"
                           />
                         </FormControl>
-                        <FormMessage />
+                        <FormMessage className="text-danger" />
                       </FormItem>
                     )}
                   />
@@ -90,7 +90,7 @@ export const Banner = () => {
                             className="rounded-[30px] md:min-w-[200px] lg:min-w-[300px] px-4 py-6 text-primary placeholder:text-primary"
                           />
                         </FormControl>
-                        <FormMessage />
+                        <FormMessage className="text-danger" />
                       </FormItem>
                     )}
                   />
