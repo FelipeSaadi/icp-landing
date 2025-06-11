@@ -27,6 +27,7 @@ module.exports = {
         light: 'var(--text-light)',
         highlight: 'var(--highlight)',
         dark: 'var(--text-dark)',
+        danger: 'var(--text-danger)',
       },
       animation: {
         marquee: 'marquee 12s linear infinite',

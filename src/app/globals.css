@@ -12,7 +12,8 @@
   --text-secondary: #AFA1CE;
   --text-dark: #1E005D;
   --text-light: #FFFFFF;
-  --highlight: #fbb13e;
+  --text-danger: #B30000;
+  --highlight: #FBB13E;
 }
 
 body {

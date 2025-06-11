@@ -18,8 +18,8 @@ import {
 import { Input } from "@/components/ui/input"
 
 const schema = z.object({
-  name: z.string().min(2),
-  email: z.string().email(),
+  name: z.string().min(2, { message: "Nome deve ter pelo menos 2 caracteres" }),
+  email: z.string().email({ message: "Email inválido" }),
 })
 
 export const Banner = () => {
@@ -123,7 +123,7 @@ export const Banner = () => {
               </p>
             </div>
 
-            <div className="flex flex-col bg-background rounded-[30px] mx-12 p-8">
+            <div className="flex flex-col bg-background rounded-[30px] mx-12 py-6 px-4">
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
                   <FormField
@@ -139,7 +139,7 @@ export const Banner = () => {
                             className="rounded-[30px] min-w-[200px] px-4 py-6 text-primary placeholder:text-primary"
                           />
                         </FormControl>
-                        <FormMessage />
+                        <FormMessage className="text-danger" />
                       </FormItem>
                     )}
                   />
@@ -156,14 +156,14 @@ export const Banner = () => {
                             className="rounded-[30px] min-w-[200px] px-4 py-6 text-primary placeholder:text-primary"
                           />
                         </FormControl>
-                        <FormMessage />
+                        <FormMessage className="text-danger"/>
                       </FormItem>
                     )}
                   />
                   <Button type="submit" variant="default" className="flex items-center justify-center w-full bg-primary rounded-[30px] px-8 py-6">
-                    <span className="mr-2 text-light text-xs">
+                    <span className="mr-1 text-light text-[10px]">
                       QUERO GANHAR PARA ESTUDAR
-                      <span className="ml-4">→</span>
+                      <span className="ml-2 text-[10px]">→</span>
                     </span>
                   </Button>
                 </form>
