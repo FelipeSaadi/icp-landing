@@ -8,6 +8,9 @@ module.exports = {
     './src/modules/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+      'xxs': '540px',
+    },
     extend: {
       colors: {
         background: 'var(--background)',
