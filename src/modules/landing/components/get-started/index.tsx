@@ -22,7 +22,7 @@ export const GetStarted = () => {
                 Pronto para explorar o<br />futuro da internet?
               </h2>
               <div className="flex flex-col gap-4 mt-8">
-                <a href="#" className="inline-flex items-center justify-center px-8 py-4 bg-primary text-light rounded-[30px] font-bold hover:bg-primary/90 transition-all">
+                <a href="http://aprendaicp.xyz" className="inline-flex items-center justify-center px-8 py-4 bg-primary text-light rounded-[30px] font-bold hover:bg-primary/90 transition-all">
                   QUERO GANHAR PARA ESTUDAR <span className="ml-4">→</span>
                 </a>
               </div>
