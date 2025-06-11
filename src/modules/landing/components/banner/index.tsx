@@ -136,7 +136,7 @@ export const Banner = () => {
                           <Input
                             placeholder="Seu e-mail"
                             {...field}
-                            className="rounded-[30px] min-w-[200px] px-4 py-6 text-primary placeholder:text-primary"
+                            className="rounded-[30px] min-w-[160px] px-4 py-6 text-primary placeholder:text-primary"
                           />
                         </FormControl>
                         <FormMessage className="text-danger" />
@@ -153,7 +153,7 @@ export const Banner = () => {
                           <Input
                             placeholder="Seu nome"
                             {...field}
-                            className="rounded-[30px] min-w-[200px] px-4 py-6 text-primary placeholder:text-primary"
+                            className="rounded-[30px] min-w-[160px] px-4 py-6 text-primary placeholder:text-primary"
                           />
                         </FormControl>
                         <FormMessage className="text-danger"/>
@@ -161,9 +161,9 @@ export const Banner = () => {
                     )}
                   />
                   <Button type="submit" variant="default" className="flex items-center justify-center w-full bg-primary rounded-[30px] px-8 py-6">
-                    <span className="mr-1 text-light text-[10px]">
+                    <span className="mr-1 text-light text-[10px] xxs:text-xs">
                       QUERO GANHAR PARA ESTUDAR
-                      <span className="ml-2 text-[10px]">→</span>
+                      <span className="ml-2 text-[10px] xxs:text-xs">→</span>
                     </span>
                   </Button>
                 </form>

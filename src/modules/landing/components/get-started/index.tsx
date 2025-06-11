@@ -17,7 +17,7 @@ export const GetStarted = () => {
             <div className="lg:w-[45%]">
               <img src="/astro.jpg" alt="" className="w-full rounded-[20px]" />
             </div>
-            <div className="flex-1 p-16">
+            <div className="flex-1 p-8 md:p-16">
               <h2 className="text-3xl font-bold text-dark mb-4">
                 Pronto para explorar o<br />futuro da internet?
               </h2>
