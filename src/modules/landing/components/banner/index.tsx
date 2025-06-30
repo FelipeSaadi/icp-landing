@@ -1,6 +1,6 @@
 'use client'
 
-import { useRouter } from "next/navigation"
+// import { useRouter } from "next/navigation"
 
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
@@ -23,7 +23,7 @@ const schema = z.object({
 })
 
 export const Banner = () => {
-  const router = useRouter()
+  // const router = useRouter()
 
   const form = useForm({
     resolver: zodResolver(schema),
