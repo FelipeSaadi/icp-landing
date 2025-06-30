@@ -1,11 +1,11 @@
 "use client"
 
-import { useRouter } from "next/navigation"
+// import { useRouter } from "next/navigation"
 
 import { Button } from "@/components/ui/button"
 
 export const GetStarted = () => {
-    const router = useRouter()
+    // const router = useRouter()
 
     const handleGetStarted = () => {
         // router.push('http://aprendaicp.xyz')
